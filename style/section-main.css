@@ -18,7 +18,7 @@
 
 .sidebar {
     width: 25%;
-    padding: 10px 10px;
+    padding: 10px 0px 10px 10px;
 }
 
 .sidebar ul {
@@ -30,19 +30,17 @@
     font-size: 16px;
 }
 
-.sidebar li:first-child {
-    padding: 10px;
-    border-radius: 5px;
-}
+
 .sidebar li:hover {
     background-color: #e0ebff; /* Same as the first category */
     font-weight: 600;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .main-content {
     width: 47%;
-    height: 350px;
+    height: 345px;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -74,26 +72,110 @@
     margin-top: 15px;
     border-radius: 5px;
 }
-
 .sidebar-right {
-    width: 25%;
+    width: 100%;
+    max-width: 320px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    font-family: Arial, sans-serif;
 }
 
-.sidebar-right div {
-    padding: 15px;
+.profile-box {
+    background-color: #e6f0ff;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Make Avatar & Text appear in the same row */
+.profile-row {
+    display: flex;
+    align-items: center; /* Aligns avatar and text in the same row */
+    gap: 12px; /* Space between avatar and text */
+}
+
+/* Avatar Styles */
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d1e3ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.avatar i {
+    font-size: 24px;
+    color: #7f8fa6;
+}
+
+/* When user image is loaded, hide the icon */
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: none;
+    object-fit: cover;
+}
+
+/* User info section is now beside the avatar */
+.user-info {
+    flex-grow: 1; /* Takes up remaining space */
+}
+
+.user-info h2 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+    color: #000;
+}
+
+.user-info p {
+    font-size: 14px;
+    margin: 3px 0;
+    color: #555;
+}
+
+/* Buttons */
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
     text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.join-now {
+    background-color: #007aff;
+    color: white;
+    border: none;
+}
+
+.log-in {
+    background-color: white;
+    color: #007aff;
+    border: 1px solid #007aff;
+}
+
+/* Boxes */
+.orange-box, .blue-box {
+    padding: 15px;
     border-radius: 8px;
+    text-align: left;
     font-size: 14px;
     color: white;
 }
 
-.blue-box {
-    background-color: #4a90e2;
+.orange-box {
+    background-color: #f57c22;
 }
 
-.orange-box {
-    background-color: #f5a623;
+.blue-box {
+    background-color: #52b8c8;
 }
