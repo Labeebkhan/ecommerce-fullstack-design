@@ -6,11 +6,11 @@
 }
 
 .container {
-    margin: 8px;
+    margin: 25px 98px;
     display: flex;
-    border: 2px solid #4a90e2;
-    border-radius: 8px;
-    padding: 20px;
+    border: 2px solid #d1d1d1;
+    border-radius: 6px;
+    padding: 7px 7px;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
@@ -18,7 +18,7 @@
 
 .sidebar {
     width: 25%;
-    padding: 10px;
+    padding: 10px 10px;
 }
 
 .sidebar ul {
@@ -28,35 +28,51 @@
 .sidebar li {
     padding: 10px;
     font-size: 16px;
-    border-bottom: 1px solid #ccc;
 }
 
 .sidebar li:first-child {
-    font-weight: bold;
-    background-color: #e0ebff;
     padding: 10px;
     border-radius: 5px;
 }
-
-.main-content {
-    width: 50%;
-    text-align: center;
-    background-color: #b7e5d1;
-    padding: 20px;
-    border-radius: 10px;
+.sidebar li:hover {
+    background-color: #e0ebff; /* Same as the first category */
+    font-weight: 600;
+    cursor: pointer;
 }
 
+.main-content {
+    width: 47%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-image: url('../images/banner-main.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    border-radius: 4px;
+    position: relative;
+    color: black; /* Text color */
+}
+
+
 .main-content h2 {
+    margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
+    display: inline-block;
+    border-radius: 5px;
 }
 
 .main-content button {
+    width: 120px;
     padding: 10px 20px;
     background-color: white;
     border: none;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
 }
 
 .sidebar-right {
