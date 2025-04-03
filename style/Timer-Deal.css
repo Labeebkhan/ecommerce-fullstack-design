@@ -42,6 +42,9 @@
     gap: 10px;
     border-right: #ddd 2px solid;
 }
+.product:hover{
+    cursor: pointer;
+}
 .product5{
     border: none;
 }
