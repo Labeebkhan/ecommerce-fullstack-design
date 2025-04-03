@@ -6,6 +6,7 @@
     <title>E-commerce Navbar</title>
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/section-main.css">
+    <link rel="stylesheet" href="style/Timer-Deal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
@@ -81,24 +82,42 @@
         </div>
 
       
-<div class="sidebar-right">
-    <div class="profile-box">
-        <div class="profile-row">
-            <div id="user-avatar" class="avatar">
-                <i class="fa-solid fa-user"></i>
+    <div class="sidebar-right">
+        <div class="profile-box">
+            <div class="profile-row">
+                <div id="user-avatar" class="avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="user-info">
+                    <h2>Hi, <span id="username">User</span></h2>
+                    <p>Let’s get started</p>
+                </div>
             </div>
-            <div class="user-info">
-                <h2>Hi, <span id="username">User</span></h2>
-                <p>Let’s get started</p>
-            </div>
+            <button class="button join-now">Join now</button>
+            <button class="button log-in">Log in</button>
         </div>
-        <button class="button join-now">Join now</button>
-        <button class="button log-in">Log in</button>
-    </div>
 
-    <div class="orange-box">Get US $10 off with a new supplier</div>
-    <div class="blue-box">Send quotes with supplier preferences</div>
-</div>     
+        <div class="orange-box">Get US $10 off with a new supplier</div>
+        <div class="blue-box">Send quotes with supplier preferences</div>
+    </div>     
+</div>
+<!-- Tmer and Deals Section -->
+<div class="deals-container">
+    <div class="deals-info">
+        <h2>Deals and offers</h2>
+        <p>Hygiene equipments</p>
+        <div class="timer" id="timer">
+            <div class="time-box"><span id="days">04</span> Days</div>
+            <div class="time-box"><span id="hours">13</span> Hour</div>
+            <div class="time-box"><span id="minutes">34</span> Min</div>
+            <div class="time-box"><span id="seconds">56</span> Sec</div>
+        </div>
     </div>
+    <div class="product"><img src="images/smartwatch.jpg" alt="Smart Watch"><p>Smart watches</p><div class="discount">-25%</div></div>
+    <div class="product"><img src="images/laptop.jpg" alt="Laptop"><p>Laptops</p><div class="discount">-15%</div></div>
+    <div class="product"><img src="images/Camera.png" alt="GoPro"><p>GoPro cameras</p><div class="discount">-40%</div></div>
+    <div class="product"><img src="images/headphones.jpg" alt="Headphones"><p>Headphones</p><div class="discount">-25%</div></div>
+    <div class="product product5"><img src="images/Mobile.jpg" alt="Canon Camera"><p>Canon cameras</p><div class="discount">-25%</div></div>
+</div>
 </body>
 </html>
